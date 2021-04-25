@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Danh sách bạn bè</title>
+    
+
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="profile02.css">
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16"> 
+    <link rel="stylesheet" href="csss/css/main.min.css">
+    <link rel="stylesheet" href="csss/css/style.css">
+    <link rel="stylesheet" href="csss/css/color.css">
+    <link rel="stylesheet" href="csss/css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+    
+
+</head>
+<body>
+    <div class="left-sidebar-small stop">
+        <div class="logo-small">
+            <a href="#" class="nut"><img src="img/logo-small.png" alt=""></a>
+        </div>
+        <div class="left-menu-small">
+            <ul>
+                <li><a href="#" class="nut"><i class="fas fa-bars"></i></a></li>
+                <li><a href="index.html"><i class="far fa-calendar"></i></a></li>
+                <li><a href=""><i class="far fa-star"></i></a></li>
+                <li><a href="friendslist.html"><i class="fas fa-user-friends"></i></a></li>
+                <li><a href=""><i class="fas fa-headphones-alt"></i></a></li>
+                <li><a href=""><i class="fas fa-cloud-sun"></i></a></li>
+                <li><a href=""><i class="far fa-calendar-alt"></i></a></li>
+                <li><a href=""><i class="fas fa-globe-asia"></i></a></li>
+                <li><a href=""><i class="fas fa-birthday-cake"></i></a></li>
+                <li><a href=""><i class="fas fa-file-contract"></i></a></li>
+                <li><a href=""><i class="fas fa-edit"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="left-sidebar close-left hiden-left-sidebar">
+        <div class="logo">
+            <a href="profile.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="left-menu">
+            <ul>
+                <li class="menu-item"><a href="#" class="den"><i class="fas fa-times"></i>
+                        <p>Menu thu gọn</p>
+                    </a></li>
+                <li class="menu-item"><a href="index.html"><i class="far fa-calendar"></i>
+                        <p>Bảng tin</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="far fa-star"></i>
+                        <p>Trang đã thích</p>
+                    </a></li>
+                <li class="menu-item"><a href="friendslist.html"><i class="fas fa-user-friends"></i>
+                        <p>Nhóm</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-headphones-alt"></i>
+                        <p>Âm nhạc</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-cloud-sun"></i>
+                        <p>Thời tiết</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="far fa-calendar-alt"></i>
+                        <p>Sự kiện</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-globe-asia"></i>
+                        <p>Cộng đồng</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-birthday-cake"></i>
+                        <p>Sinh nhật bạn bè</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-file-contract"></i>
+                        <p>Thống kê</p>
+                    </a></li>
+                <li class="menu-item"><a href=""><i class="fas fa-edit"></i>
+                        <p>Quản lý trang web</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-sidebar-small stop fixed-right">
+        <div class="right-edit-small right-nut right-edit-small-01"><i class="fas fa-bars"></i></div>
+        <div class="right-menu-small">
+            <ul>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-online"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-online"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="" >
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right-edit-small right-nut"><i class="fas fa-bars"></i></div>
+        <div class="chat-open-small"><i class="far fa-comments"></i></div>
+    </div>
+    <div class="right-sidebar close-right hiden-right-sidebar">
+        <div class="right-menu">
+            <ul>
+                <li class="title">
+                    <div class="subtitle"><a href="#">BẠN THÂN</a></div>
+                    <div class="setting"><a href="#">CÀI ĐẶT</a></div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more"><i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username"> Nguyễn Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="title">
+                    <div class="subtitle"><a href="#">CHƯA PHÂN LOẠI</a></div>
+                    <div class="setting"><a href="#">CÀI ĐẶT</a></div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username"> Nguyễn Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username"> Nguyễn Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username"> Nguyễn Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-busy"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username"> Nguyễn Nguyễn Lương Cảnh</strong></a>
+                        <p class="status">NGOẠI TUYẾN</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="right-menu-item">
+                    <div class="user">
+                        <img src="img/avatar-default.png" alt="">
+                        <div class="status-online"></div>
+                    </div>
+                    <div class="name">
+                        <a href="#"><strong class="username">Lương Cảnh</strong></a>
+                        <p class="status">ĐANG HOẠT ĐỘNG</p>
+                    </div>
+                    <div class="more">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <div class="right-big-list-icon-item">
+                            <a href=""><i class="fas fa-comment-dots"></i></a>
+                            <a href=""><i class="fas fa-comments"></i></a>
+                            <a href=""><i class="fas fa-comment-slash"></i></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right-edit">
+            <input class="right-edit-input" type="text" placeholder="Tìm kiếm">
+            <i class="fas fa-sliders-h"></i>
+            <i class="fas fa-times right-den"></i>
+        </div>
+        <div class="chat-open">
+            <strong>TIN NHẮN</strong>
+            <i class="far fa-comments"></i>
+        </div>
+    </div>
+    <header class="site-header row">
+        <div class="page-title">
+            <strong>BẢNG TIN</strong>
+        </div>
+        <div class="header-search">
+            <input type="search" class="search" placeholder="Tìm kiếm...">
+            <i class="fa fa-search"></i>
+            <div class="list history">
+                <ul class="list-group">
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-04.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Lương Cảnh</strong></a>
+                            <p class="status friend">20 bạn chung</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Phước Tùng</strong></a>
+                            <p class="status friend">20 bạn chung</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-03.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Duy Tuấn</strong></a>
+                            <p class="status friend">10 bạn chung</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="" class="find">Tìm kiếm bạn bè</a>
+        <div class="inform">
+            <i class="far fa-laugh"></i>
+            <div class="inform-icon" style="background: #38a9ff;">
+                <p>4</p>
+            </div>
+            <div class="list">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-edit">
+                        <div class="name">
+                            <a href="#"><p class="username">Lời mời kết bạn</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Cài đặt</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Tìm kiếm</p></a>
+                        </div>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-04.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Lương Cảnh</strong></a>
+                            <p class="status friend">20 bạn chung</p>
+                        </div>
+                        <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                        <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Phước Tùng</strong></a>
+                            <p class="status">20 bạn chung</p>
+                        </div>
+                        <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                        <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-03.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Duy Tuấn</strong></a>
+                            <p class="status">10 bạn chung</p>
+                        </div>
+                        <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                        <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-foot" style="background-color: #38a9ff;">
+                        <div class="name">
+                            <a href="#"><strong class="username">Xem tất cả lời mời kết bạn</strong></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inform">
+            <i class="far fa-comments"></i>
+            <div class="inform-icon" style="background: #7b59c1;">
+                <p>1</p>
+            </div>
+            <div class="list">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-edit">
+                        <div class="name">
+                            <a href="#"><p class="username">Tin nhắn</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Cài đặt</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Đánh dấu</p></a>
+                        </div>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-04.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Lương Cảnh</strong></a>
+                            <p class="status friend">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div></div>
+                        <i class="far fa-comments" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Phước Tùng</strong></a>
+                            <p class="status friend">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div></div>
+                        <i class="far fa-comments" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-02.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#"><strong class="username">Nguyễn Duy Sơn</strong></a>
+                            <p class="status friend">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div></div>
+                        <i class="far fa-comments" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-foot" style="background-color: #7b59c1;">
+                        <div class="name">
+                            <a href="#"><strong class="username">Xem tất cả tin nhắn</strong></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inform">
+            <i class="fas fa-bolt"></i>
+            <div class="inform-icon" style="background: #fd5e3a;">
+                <p>9</p>
+            </div>
+            <div class="list">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-edit">
+                        <div class="name">
+                            <a href="#"><p class="username">Thông báo</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Cài đặt</p></a>
+                        </div>
+                        <div class="name">
+                            <a href="#"><p class="username">Đánh dấu</p></a>
+                        </div>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-04.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#">
+                                <p class="notify username">Nguyễn Lương Cảnh<span class="notify-content"> đã bình luận bài viết của bạn.</span></p>
+                            </a>
+                        </div>
+                        <div></div>
+                        <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#">
+                                <p class="notify username">Bạn <span class="notify-content"> và </span> Lương Cảnh <span class="notify-content"> vừa trở thành bạn bè.</span></p>
+                            </a>
+                        </div>
+                        <div></div>
+                        <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item right-menu-item">
+                        <div class="user">
+                            <img src="img/avt-02.webp" alt="">
+                        </div>
+                        <div class="name">
+                            <a href="#">
+                                <p class="notify username">Nguyễn Cảnh<span class="notify-content"> đã thích bài viết của bạn.</span></p>
+                            </a>
+                        </div>
+                        <div></div>
+                        <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                    </li>
+                    <li class="list-group-item list-group-item-foot" style="background-color: #fd5e3a;">
+                        <div class="name">
+                            <a href="#"><strong class="username">Xem tất cả thông báo</strong></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inform seek">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="right-menu-item user-information">
+            <div class="user">
+                <img src="img/avt-04.webp" alt="">
+                <div class="status-online"></div>
+                <div class="list">
+                    <ul class="list-group">
+                        <li class="list-group-item acc-infor acc-infor-setting">
+                            <div class="name">
+                                <a href="#"><p class="username">Tài khoản của bạn</p></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor" style="border-top: 1px #e6ecf5 solid;">
+                            <i class="fas fa-bars"></i>
+                            <div class="name">
+                                <a href="#"><strong class="username">Cài đặt tài khoản</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor">
+                            <i class="far fa-star"></i>
+                            <div class="name">
+                                <a href="#"><strong class="username">Tạo trang</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor">
+                            <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                            <div class="name">
+                                <a href="#"><strong class="username">Đăng xuất</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor acc-infor-setting" style="border-top: 1px #e6ecf5 solid;">
+                            <div class="name">
+                                <a href="#"><p class="username">Cài đặt</p></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor" style="border-top: 1px #e6ecf5 solid;">
+                            <div class="status-online"></div>
+                            <div class="name">
+                                <a href="#"><strong class="username status-01">Đang hoạt động</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor">
+                            <div class="status-busy"></div>
+                            <div class="name">
+                                <a href="#"><strong class="username status-01">Ngoại tuyến</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor acc-infor-setting" style="border-top: 1px #e6ecf5 solid;">
+                            <div class="name">
+                                <a href="#"><p class="username">Thông tin khác</p></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor" style="border-top: 1px #e6ecf5 solid;">
+                            <div class="name">
+                                <a href="#"><strong class="username">Điều khoản & điều kiện</strong></a>
+                            </div>
+                        </li>
+                        <li class="list-group-item acc-infor">
+                            <div class="name">
+                                <a href="#"><strong class="username">Liên hệ</strong></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="name">
+                <a href="profile-01.html"><strong class="username username-01">Nguyễn Lương Cảnh</strong></a>
+            </div>
+            <div class="more mt-1"><i class="fas fa-angle-down" style="color: #ffffff;font-size: 10px;"></i></div>
+        </div>
+    </header>
+    <div class="row fixed-top" style="z-index: 2;">
+        <div class="col-12">
+            <div class="inform-res">
+                <div class="inform-res-tittle">
+                    <h6>LỜI MỜI KẾT BẠN</h6>
+                    <a href="#">CÀI ĐẶT</a>
+                    <a href="#">TÌM KIẾM</a>
+                </div>
+                <ul class="inform-res-friend">
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class="mutual-friend">4 bạn chung</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                            <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-03.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class="mutual-friend">54 bạn chung</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                            <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-01.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class="mutual-friend">2 bạn chung</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-user-plus" style="color: #38a9ff;"></i>
+                            <i class="fas fa-user-minus" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                </ul>
+                <a href="#" class="inform-res-footer" style="background-color: #38a9ff;">Xem tất cả lời mời kết bạn</a>
+            </div>
+        </div>
+    </div>
+    <div class="row fixed-top" style="z-index: 2;">
+        <div class="col-12">
+            <div class="inform-res">
+                <div class="inform-res-tittle">
+                    <h6>TIN NHẮN</h6>
+                    <a href="#">CÀI ĐẶT</a>
+                    <a href="#">ĐÁNH DẤU</a>
+                </div>
+                <ul class="inform-res-friend">
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class=" mutual-friend last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, possimus quae ut doloremque qui adipisci accusantium quod non.</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="far fa-comments" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class=" mutual-friend last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, possimus quae ut doloremque qui adipisci accusantium quod non.</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="far fa-comments" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <a href="" class="h6 friend-name">Nguyễn Phước Tùng</a>
+                            <span class=" mutual-friend last-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, possimus quae ut doloremque qui adipisci accusantium quod non.</span>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="far fa-comments" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                </ul>
+                <a href="#" class="inform-res-footer" style="background-color: #7b59c1;">Xem tất cả tin nhắn</a>
+            </div>
+        </div>
+    </div>
+    <div class="row fixed-top" style="z-index: 2;">
+        <div class="col-12">
+            <div class="inform-res">
+                <div class="inform-res-tittle">
+                    <h6>THÔNG BÁO</h6>
+                    <a href="#">CÀI ĐẶT</a>
+                    <a href="#">ĐÁNH DẤU</a>
+                </div>
+                <ul class="inform-res-friend">
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <div>
+                                <a href="" class="h6 friend-name">Nguyễn Phước Tùng<span> đã bình luận bài viết của bạn.</span></a>
+                            </div>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <div>
+                                <a href="" class="h6 friend-name">Nguyễn Phước Tùng<span> đã thích bài viết của bạn.</span></a>
+                            </div>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <div class="author-avatar">
+                            <img src="img/avt-04.webp" style="width: 34px;height: 34px;">
+                        </div>
+                        <div class="notify-request">
+                            <div>
+                                <a href="" class="h6 friend-name">Bạn<span> và </span>Lương Cảnh<span> vừa trở thành bạn bè.</span></a>
+                            </div>
+                        </div>
+                        <span class="notify-icon">
+                            <i class="fas fa-bolt" style="color: #9899a4;"></i>
+                        </span>
+                    </li>
+                </ul>
+                <a href="#" class="inform-res-footer" style="background-color: #fd5e3a;">Xem tất cả thông báo</a>
+            </div>
+        </div>
+    </div>
+    <div class="row fixed-top" style="z-index: 2;">
+        <div class="col-12">
+            <div class="seek-form">
+                <input type="search" class="seek-input" placeholder="Tìm kiếm...">
+                <div class="history list-seek">
+                    <ul class="list-group list-group-seek">
+                        <li class="list-group-item right-menu-item">
+                            <div class="user">
+                                <img src="img/avt-04.webp" alt="">
+                            </div>
+                            <div class="name">
+                                <a href="#"><strong class="username">Nguyễn Lương Cảnh</strong></a>
+                                <p class="status friend">20 bạn chung</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item right-menu-item">
+                            <div class="user">
+                                <img src="img/avt.webp" alt="">
+                            </div>
+                            <div class="name">
+                                <a href="#"><strong class="username">Nguyễn Phước Tùng</strong></a>
+                                <p class="status friend">20 bạn chung</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item right-menu-item">
+                            <div class="user">
+                                <img src="img/avt-03.webp" alt="">
+                            </div>
+                            <div class="name">
+                                <a href="#"><strong class="username">Nguyễn Duy Tuấn</strong></a>
+                                <p class="status friend">10 bạn chung</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header and menu -->
+    <div class="container">
+        <div class="row" style="margin-top: 110px;">
+            <div class="col-lg-12">
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-online"></span> Sophia | 22</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class="verify"><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Canada</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>1.6k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>125</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-online"></span> Sophia | 24</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class="verify"><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Germany</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>2.3k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>10</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-away"></span> Sania | 24</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class=""><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Poland</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>1.1k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>54</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-online"></span> Olivia | 23</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class=""><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Canada</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>9k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>20</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-offline"></span> Josef | 25</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class=""><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Jordan</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>1.6k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>125</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-offline"></span> william | 25</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class="verify"><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> Jordan</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>1.6k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>125</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <div class="pit-post">
+                        <figure>
+                            <img src="img/abc.png" width="120px" height="120px" alt="" >
+                        </figure>
+                        <div class="pit-post-deta">
+                            <h4><a href="pitpoint-detail.html" title=""><span class="status f-offline"></span> Katrina | 25</a></h4>
+                            <ul class="post-up-time">
+                                <li>
+                                    <div class="verification">
+                                        <em class="verify"><i class="fa fa-check-circle"></i> verified</em>
+                                    </div>
+                                </li>
+                                <li><i class="fa fa-map-marker"></i> UK</li>
+                            </ul>
+                            <ul class="pit-opt">
+                                <li>
+                                    <div class="likes heart" title="Like/Dislike">❤ <span>2.2k</span></div>
+                                </li>	
+                                <li class="share-pst" title="Shares"><i class="fa fa-share-alt"></i><em>125</em></li>
+                                <li class="save-post" title="Match Mark"><i class="fa fa-check-circle"></i></li>
+                                <li class="get-link" title="Get Post Link"><i class="fa fa-link"></i></li>
+                                <li class="smile-it" title="Give Smiles"><i class="fa fa-smile-o"></i><em>Send Smile</em>
+                                    <div class="smiles-bunch">
+                                        <i class="em em---1"></i>
+                                        <i class="em em-smiley"></i>
+                                        <i class="em em-anguished"></i>
+                                        <i class="em em-laughing"></i>
+                                        <i class="em em-angry"></i>
+                                        <i class="em em-astonished"></i>
+                                        <i class="em em-blush"></i>
+                                        <i class="em em-disappointed"></i>
+                                        <i class="em em-worried"></i>
+                                        <i class="em em-kissing_heart"></i>
+                                        <i class="em em-rage"></i>
+                                        <i class="em em-stuck_out_tongue"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" title="" class="main-btn2 send-mesg" data-ripple="">Send Message</a>
+                            <a href="#" title="" class="main-btn" data-ripple="">Add Friend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="central-meta item">
+                    <span class="create-post">Related Searches</span>
+                    <ul class="related-searches">
+                        <li><a title="" href="#">Sophia jane jr.</a></li>
+                        <li><a title="" href="#">Sophia Pool</a></li>
+                        <li><a title="" href="#">Sofia fdny </a></li>
+                        <li><a title="" href="#">Sophia chevrolet cadillac </a></li>
+                        <li><a title="" href="#">Sophia sophia </a></li>
+                    </ul>
+                </div><!-- related keywords -->
+            </div>
+           
+            
+        </div>
+    </div>
+    <footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="widget">
+						<div class="foot-logo">
+							<div class="logo">
+								<a href="index.html" title=""><img src="img/logo.png" alt="" width="180px" height="40px"></a>
+							</div>	
+							<p>
+								The trio took this simple idea and built it into the world’s leading carpooling platform.
+							</p>
+						</div>
+						<ul class="location">
+							<li>
+								<i class="fa fa-map-marker"></i>
+								<p>33 new montgomery st.750 san francisco, CA USA 94105.</p>
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>
+								<p>+1-56-346 345</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="widget">
+						<div class="widget-title"><h4>follow</h4></div>
+						<ul class="list-style">
+							<li><i class="fa fa-facebook-square"></i> <a href="https://web.facebook.com/shopcircut/" title="">facebook</a></li>
+							<li><i class="fa fa-twitter-square"></i><a href="https://twitter.com/login?lang=en" title="">twitter</a></li>
+							<li><i class="fa fa-instagram"></i><a href="https://www.instagram.com/?hl=en" title="">instagram</a></li>
+							<li><i class="fa fa-google-plus-square"></i> <a href="https://plus.google.com/discover" title="">Google+</a></li>
+							<li><i class="fa fa-pinterest-square"></i> <a href="https://www.pinterest.com/" title="">Pintrest</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="widget">
+						<div class="widget-title"><h4>Navigate</h4></div>
+						<ul class="list-style">
+							<li><a href="about.html" title="">about us</a></li>
+							<li><a href="contact.html" title="">contact us</a></li>
+							<li><a href="terms.html" title="">terms & Conditions</a></li>
+							<li><a href="#" title="">RSS syndication</a></li>
+							<li><a href="sitemap.html" title="">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="widget">
+						<div class="widget-title"><h4>useful links</h4></div>
+						<ul class="list-style">
+							<li><a href="#" title="">leasing</a></li>
+							<li><a href="#" title="">submit route</a></li>
+							<li><a href="#" title="">how does it work?</a></li>
+							<li><a href="#" title="">agent listings</a></li>
+							<li><a href="#" title="">view All</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="widget">
+						<div class="widget-title"><h4>download apps</h4></div>
+						<ul class="colla-apps">
+							<li><a href="https://play.google.com/store?hl=en" title=""><i class="fa fa-android"></i>android</a></li>
+							<li><a href="https://www.apple.com/lae/ios/app-store/" title=""><i class="fa fa-mobile" aria-hidden="true"></i>iPhone</a></li>
+							<li><a href="https://www.microsoft.com/store/apps" title=""><i class="fa fa-windows"></i>Windows</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- footer -->
+    <script src="style.js"></script>
+</body>
+</html>
